@@ -8,10 +8,6 @@ body {
 
 }
 
-#baslik {
-    margin-top: 30px;
-}
-
 #btn_class {
     color: black;
     display: block;
@@ -31,29 +27,10 @@ body {
     margin-bottom: 250px;
 }
 
-#image2_bilgiNotu{
-    color:black;
-    margin-bottom:150px;
+#baslik{
+    margin-top: 100px;
 }
 
-#image_2 {
-    font: 19px sans-serif;
-    margin: 0px auto;
-    position: relative;
-    width: 600px;
-    height: 350px;
-    overflow: hidden;
-}
-
-#kontrol {
-    position: absolute;
-    right: 0px;
-    bottom: 10px;
-}
-
-#kontrol a {
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    text-decoration: none;
+#txt_dipnot{
+    margin-bottom: 200px;
 }
