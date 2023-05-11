@@ -42,7 +42,7 @@ body {
     position: relative;
     width: 600px;
     height: 350px;
-    overflow: hidden;
+    margin-bottom: 200px;
 }
 
 #kontrol {
