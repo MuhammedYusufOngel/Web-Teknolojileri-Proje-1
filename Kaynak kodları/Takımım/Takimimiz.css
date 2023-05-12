@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    background-image: url("anitkabirDuvar.jpg");
+    background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center;
+
+}
+
+#btn_class {
+    color: black;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+
+#baslik {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#bilgi_1{
+    color: black;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-bottom: 250px;
+}
+
+.p{
+    margin-bottom: 75px;
+}
