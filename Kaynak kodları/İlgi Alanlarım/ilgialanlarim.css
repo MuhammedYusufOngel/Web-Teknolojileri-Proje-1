@@ -16,3 +16,12 @@ body {
     margin-right: auto;
     width: 30%;
 }
+
+.tablo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tabloSatir{
+    width: 100px;
+}
