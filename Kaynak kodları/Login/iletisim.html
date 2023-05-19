@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>     
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+
+
+    <style>
+        .form {
+            border-style: dashed;
+            border:10px;
+            border-radius: 10px;
+        }
+        
+        .error-msg
+        {
+            padding-top: 5px;
+            display: block;
+            color: red;
+        }
+
+    </style>
+</head>
+<body align="center">
+    <form action="" id="form1" novalidate>
+        <label for="ad">Ad:</label>
+        <input type="text" name="ad" id="txt_ad" required><br>
+        <label for="soyad">Soyad:</label>
+        <input type="text" name="soyad" id="txt_soyad" required><br>
+        <label for="yas">Yaş:</label>
+        <input type="number" name="yas" id="txt_yas" required><br><br>
+        <label for="email">Elektronik Posta Adresi:</label>
+        <input type="email" name="email" id="txt_mail" required><br>
+        <label for="sifre">Şifre:</label>
+        <input type="password" name="sifre" id="txt_sifre"  required><br><br>
+        <label for="sınıf"> Sınıf: </label>
+        <select name="sınıf"  required>
+
+            <option value="">Seçin</option>
+            <option name="1" id="txt_1sinif">1.Sınıf</option>
+            <option name="2" id="txt_2sinif">2.Sınıf</option>
+            <option name="3" id="txt_3sinif">3.Sınıf</option>
+            <option name="4" id="txt_4sinif">4.Sınıf</option>
+
+        </select>
+        <br><br>
+
+        <label for="bolum">Bölümünüzü seçiniz.</label><br>
+
+        <div class="radio-container">
+            <input type="radio" name="bolum" value="cs" id="txt_bilMuh" required/>Bilgisayar Mühendisliği
+            <input type="radio" name="bolum" value="se" id="txt_yazMuh"  required/>Yazılım Mühendisliği
+            <input type="radio" name="bolum" value="se" id="txt_bilSisMuh"  required/>Bilişim Sistemleri Mühendisliği
+        </div><br /><br />
+
+        <label for="Ödevde Yer Alan Programlama Dilleri">Ödevinizde yer alan programlama dillerini seçiniz.</label><br />
+        <div class="radio-container">
+            <input type="checkbox" name="pd1" value="c#" id="txt_c#" required/>C#
+            <input type="checkbox" name="pd2" value="c++" id="txt_cplus" required/>C++
+            <input type="checkbox" name="pd3" value="java" id="txt_java" required/>Java
+            <input type="checkbox" name="pd4" value="python" id="txt_python" required/>Python
+            <input type="checkbox" name="pd5" value="html" id="txt_html" required/>HTML
+            <input type="checkbox" name="pd6" value="css" id="txt_css" required/>CSS
+            <input type="checkbox" name="pd7" value="js" id="txt_js" required/>Javascript
+        </div><br /><br />
+
+        <label for="dosya">Göndermek istediğiniz dosyayı seçiniz.</label><br>
+        <input type="file" name="dosya" multiple  id="txt_dosya" required/><br /><br />
+
+        <label for="tarih">Gönderilme Tarihi: </label>
+        <input type="date" name="tarih" id="txt_tarih" required><br>
+        
+        <label for="tarih">Gönderilme Saati: </label>
+        <input type="time" name="saat" id="txt_saat" required><br>
+
+        <button type="submit">Gönder</button>
+        <input type="reset" value="Temizle" />
+
+        <h1 id="h1"></h1>
+    </form>
+
+
+
+
+    <!--Javascript ile form elemanı çalıştırma-->
+    
+    <script>
+        const formDOM = document.getElementById('form1')
+
+
+        formDOM.addEventListener('submit', function(e)
+        {
+            e.preventDefault();
+            [...this.elements].forEach(formElement => {
+                
+                let parent = formElement
+
+                if(formElement.getAttribute('type') === 'radio' || formElement.getAttribute('type') === 'checkbox'){
+                    parent = formElement.closest('.radio-container')
+                }
+
+                if(!formElement.checkValidity())
+                {
+                    
+                    if(parent.nextElementSibling?.className !== 'error-msg'){
+                        const error = document.createElement('small')
+                        error.className='error-msg'
+                        error.innerText = formElement.validationMessage
+                        parent.insertAdjacentElement('afterend', error)
+                    }
+
+                    else{
+                        parent.nextElementSibling.innerText = formElement.validationMessage
+                    }
+                }
+                else{
+                    if(parent.nextElementSibling?.className === 'error-msg'){
+                        parent.nextElementSibling.remove()
+                    }
+                }
+            })
+
+            if(this.checkValidity())
+            {
+                new FormData(formDOM)
+            }
+        });
+
+        formDOM.addEventListener('formdata', function(e){
+            const data = e.formData
+            var request = new XMLHttpRequest();
+            request.open("POST", "ajax.php");
+            request.addEventListener('load', function(response) {
+                console.log(response)
+            });
+            request.send(data);
+        })
+    </script>
+
+
+</body>
+</html>

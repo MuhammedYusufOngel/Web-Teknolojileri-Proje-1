@@ -1,0 +1,79 @@
+.container{
+    margin: 70px;
+}
+
+body{
+    background-color: white;
+    background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+}
+
+#btn_class {
+    color: black;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.magic-form {
+    width:50%;
+    margin: 20px auto;
+    border: 1px;
+    padding: 25px;
+    border-style:solid;
+}
+
+radio, checkbox, label{
+    color:black;
+    font-size:14px;
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+
+.input{
+    width:50%;
+    height:25px;
+    border-bottom:1px solid rgba(#fff, .3);
+    border-color:white;
+    background: transparent;
+}
+
+select{
+    width:50%;
+    height:25px;
+    border-bottom:1px solid rgba(#fff, .3);
+    background: transparent;
+}
+.input-feedback
+{
+    padding-top: 5px;
+    display: block;
+    color: red;
+}
+
+#temizle{
+    width:20%;
+    height:40px;
+    border-style:none;
+    border-radius:4px;
+    color: white;
+    font-size:16px;
+    cursor: pointer;
+    background: red;
+}
+
+.gonder{
+    width:20%;
+    height:40px;
+    border-style:none;
+    border-radius:4px;
+    color: white;
+    font-size:16px;
+    cursor: pointer;
+    background: rebeccapurple;
+}

@@ -205,7 +205,7 @@
         });
 
         formDOM.addEventListener('formdata', function(e){
-            const data = e.formData
+            const data = e.formData;
             var request = new XMLHttpRequest();
             request.open("POST", "form.php");
             request.addEventListener('load', function(response) {
