@@ -1,0 +1,42 @@
+            body {
+                background-color: white;
+                background-image: url("https://blog.biletino.com/file/2022/12/atakule-biletino-blog-ankara-24323.jpg");
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-size:cover;
+                background-position:center;
+
+            }
+            #btn_class {
+                color: rgb(241, 225, 225);
+                display: block;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                width:40%;
+            }
+
+            #txt_bilgiler {
+                color: rgb(241, 225, 225);
+                display: block;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                margin-bottom: 250px;
+            }
+            #image_2 {
+                color: rgb(241, 225, 225);
+                display: block;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom:50px;
+                width:100%;
+                height:350px;
+            }
+
+            #image{
+                width:600px;
+                height:350px;
+            }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=.6">
+    <title>İletişim</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body align="center">
+    
+    <div id="btn_class" class="container-fluid my-2 p-3" align="center">
+        <div class="row" align="center">
+                <div class="col-24 col-sm-12 col-md-12 col-lg-3"><button type="button" class="btn" onclick="location.href='/ozgecmisim/ozgecmisim.html'">Özgeçmişim</button></div> 
+                <div class="col-24 col-sm-12 col-md-12 col-lg-3"><button type="button" class="btn" onclick="location.href='/anasayfa/anasayfa.html'">Anasayfa</button></div> 
+                <div class="col-24 col-sm-12 col-md-12 col-lg-3"><button type="button" class="btn" onclick="location.href='/sehrim/sehrim.html'">Şehrim</button></div> 
+                <div class="col-24 col-sm-12 col-md-12 col-lg-3"><button type="button" class="btn" onclick="location.href='/mirasimiz/mirasimiz.html'">Mirasımız</button></div> 
+                <div class="col-24 col-sm-12 col-md-12 col-lg-3"><button type="button" class="btn" onclick="location.href='/takimimiz/takimimiz.html'">Takımımız</button></div> 
+                <div class="col-24 col-sm-12 col-md-12 col-lg-3"><button type="button" class="btn" onclick="location.href='/ilgialanlarim/sonucf12013.html'">İlgi Alanlarım</button></div> 
+                <div class="col-24 col-sm-12 col-md-12 col-lg-3"><button type="button" class="btn" onclick="location.href='/Iletisim/iletisim.html'">İletişim</button></div> 
+        </div>
+            
+    </div>
+
+
+    <form action="form.php" method="POST" id="form1" novalidate>
+
+        <h2 align="center">Başvuru-Kayıt Formu</h2>
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <label for="cinsiyet"> Cinsiyet </label><br>
+            <select name="Cinsiyet" required>
+
+                <option value="">Seçin</option>
+                <option name="0" id="erkek">Erkek</option>
+                <option name="1" id="kadin">Kadın</option>
+                <option name="2" id="diger">Diğer</option>
+                <option name="3" id="belirtmekIstemiyorum">Belirtmek İstemiyorum</option>
+
+            </select><br>
+        </div>
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">        
+            <label for="ad">Ad</label><br>
+            <input type="text" class="textbox" name="Ad" id="txt_ad" required><br>
+        </div>
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">   
+            <label for="soyad">Soyad</label><br>
+            <input type="text" class="textbox" name="Soyad" id="txt_soyad" required><br>
+        </div>
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">   
+            <label for="yas">Yaş</label><br>
+            <input type="number" class="textbox" name="Yaş" id="txt_yas" required><br><br>
+        </div>
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">  
+            <label for="email">Elektronik Posta Adresi</label><br>
+            <input type="email" class="textbox" name="Email" id="txt_mail" required><br>
+        </div>
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+            <label for="sifre">Şifre</label><br>
+            <input type="password" class="textbox" name="Şifre" id="txt_sifre"  required><br><br>
+        </div>
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <label for="sifre">Telefon Numarası</label><br>
+            <input type="tel" class="textbox" name="Tel" id="txt_tel" pattern="[0-9]{11}" placeholder="Örn: 00000000000" required><br><br><br><br>
+        </div>
+
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <label for="bolum">Bölümünüzü seçiniz.</label><br>
+
+            <div class="radio-container">
+                <input type="radio" name="Bölüm" value="Bilgisayar Mühendisliği" id="txt_bilMuh" required/>Bilgisayar Mühendisliği<br>
+                <input type="radio" name="Bölüm" value="Yazılım Mühendisliği" id="txt_yazMuh"  required/>Yazılım Mühendisliği<br>
+                <input type="radio" name="Bölüm" value="Bilişim Sistemleri Mühendisliği" id="txt_bilSisMuh"  required/>Bilişim Sistemleri Mühendisliği<br>
+            </div><br /><br />
+        </div>
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <label for="Bildiğiniz Programlama Dilleri">Bildiğiniz programlama dillerini seçiniz.</label><br />
+            <div class="radio-container">
+                <input type="checkbox" name="pd1" value="c#" id="txt_c#"/>C#<br>
+                <input type="checkbox" name="pd2" value="c++" id="txt_cplus"/>C++<br>
+                <input type="checkbox" name="pd3" value="java" id="txt_java"/>Java<br>
+                <input type="checkbox" name="pd4" value="python" id="txt_python"/>Python<br>
+                <input type="checkbox" name="pd5" value="html" id="txt_html"/>HTML<br>
+                <input type="checkbox" name="pd6" value="css" id="txt_css"/>CSS<br>
+                <input type="checkbox" name="pd7" value="js" id="txt_js"/>Javascript
+            </div><br /><br />
+        </div>
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <label for="dosya">Başvuranın fotoğrafı</label><br>
+        </div>
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <input type="file" name="dosya" id="txt_dosya" required/><br /><br />
+        </div>
+        
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <label for="tarih">Gönderilme Tarihi</label><br>
+            <input type="date" name="Tarih" id="txt_tarih" required><br>
+        </div>    
+
+        <div align="center" class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <label for="tarih">Gönderilme Saati</label><br>
+            <input type="time" name="Saat" id="txt_saat" required><br><br><br>
+        </div>
+
+        <div align="center" class="col-24 col-sm-12 col-md-12 col-lg-12">
+            <button type="submit" name="submit" class="gonder" value="Submit">Gönder</button>
+            <button type="reset" id="temizle">Temizle</button>
+        </div>
+
+
+        <h1 id="h1"></h1>
+    </form>
+
+    <script src="./form.js">
+    
+    </script>
+
+
+
+
+    <!--Javascript ile form elemanı çalıştırma-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+</body>
+</html>

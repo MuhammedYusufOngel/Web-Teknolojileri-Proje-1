@@ -1,0 +1,77 @@
+body{
+            background-color: white;
+            background-image: url("https://blog.biletino.com/file/2022/12/atakule-biletino-blog-ankara-24323.jpg");
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-size:cover;
+            background-position:center;
+        }
+        
+        #btn_class {
+            color: black;
+            display: block;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+
+        #form1 {
+            color: rgb(241, 225, 225);
+            width:50%;
+            margin: 20px auto;
+            border: 1px;
+            padding: 25px;
+            border-style:solid;
+        }
+
+        radio, checkbox, label{
+            color: rgb(241, 225, 225);
+            font-size:16px;
+            margin-top:20px;
+            margin-bottom: 10px;
+        }
+        .textbox{
+            color: rgb(241, 225, 225);
+            width:50%;
+            height:25px;
+            border-bottom:1px solid rgba(#fff, .3);
+            border-color:white;
+            background: transparent;
+        }
+        
+        select{
+            color: rgb(241, 225, 225);
+            width:50%;
+            height:25px;
+            border-bottom:1px solid rgba(#fff, .3);
+            background: transparent;
+        }
+        .error-msg
+        {
+            padding-top: 5px;
+            display: block;
+            color: red;
+        }
+
+        #temizle{
+            width:40%;
+            height:40px;
+            border-style:none;
+            border-radius:4px;
+            color: white;
+            font-size:16px;
+            cursor: pointer;
+            background: red;
+        }
+
+        .gonder{
+            width:40%;
+            height:40px;
+            border-style:none;
+            border-radius:4px;
+            color: white;
+            font-size:16px;
+            cursor: pointer;
+            background: rebeccapurple;
+        }

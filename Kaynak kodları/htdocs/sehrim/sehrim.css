@@ -1,0 +1,73 @@
+            body {
+                background-color: white;
+                background-image: url("https://blog.biletino.com/file/2022/12/atakule-biletino-blog-ankara-24323.jpg");
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-size:cover;
+                background-position:center;
+
+            }
+
+            #btn_class {
+                color: rgb(241, 225, 225);
+                display: block;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+            }
+
+
+            #baslik {
+                color: rgb(241, 225, 225);
+                margin-top: 100px;
+            }
+
+            #txt_bilgiler {
+                color: rgb(241, 225, 225);
+                display: block;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                margin-bottom: 250px;
+            }
+
+            #slider {
+                font: 19px sans-serif;
+                margin: 0px auto;
+                position: relative;
+                width: 600px;
+                height: 350px;
+                overflow: hidden;
+            }
+
+            
+            #slider_bilgiNotu {
+                color: rgb(241, 225, 225);
+                margin-bottom: 100px;
+            }
+
+            #kontrol {
+                position: absolute;
+                right: 0px;
+                bottom: 10px;
+            }
+
+            #kontrol a {
+                color: #ffffff;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px;
+                text-decoration: none;
+            }
+
+            iframe{
+                color: rgb(241, 225, 225);
+                display: block;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 40%;
+                height:350px;
+                margin-bottom:50px;
+            }
